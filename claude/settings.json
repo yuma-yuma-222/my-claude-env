@@ -1,0 +1,47 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)"
+    ],
+    "defaultMode": "auto"
+  },
+  "model": "sonnet",
+  "skillOverrides": {
+    "academic-paper-writing": "on",
+    "complex-project-execution": "on",
+    "data-analysis-methodology": "on",
+    "debugging-methodology": "on",
+    "deep-learning-tutor": "on",
+    "expert-research-methodology": "on",
+    "hard-task-metacognition": "on",
+    "hard-task-operating-procedure": "on",
+    "literature-survey-pipeline": "on",
+    "llm-project-memory": "on",
+    "network-traffic-analysis": "on",
+    "phd-advisory-committee": "on",
+    "research-committee": "on",
+    "self-improvement-loop": "on",
+    "skill-creation-methodology": "on",
+    "vulnerability-analysis": "on"
+  },
+  "enabledPlugins": {
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true
+  },
+  "tui": "fullscreen",
+  "theme": "dark",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "input=$(cat); session_id=$(echo \"$input\" | jq -r '.session_id // \"unknown\"'); proj_dir=$(pwd | sed 's/[\\/.]/-/g'); mem_dir=\"$HOME/.claude/projects/$proj_dir/memory\"; mem_file=\"$mem_dir/MEMORY.md\"; state_dir=\"$HOME/.claude/.session-memory-state\"; mkdir -p \"$state_dir\" \"$mem_dir\"; start_marker=\"$state_dir/$session_id.start\"; done_marker=\"$state_dir/$session_id.done\"; if [ -f \"$done_marker\" ]; then exit 0; fi; if [ ! -f \"$start_marker\" ]; then date +%s > \"$start_marker\"; fi; start_ts=$(cat \"$start_marker\"); if [ -f \"$mem_file\" ]; then mem_ts=$(stat -f %m \"$mem_file\" 2>/dev/null || stat -c %Y \"$mem_file\" 2>/dev/null); else mem_ts=0; fi; if [ \"$mem_ts\" -gt \"$start_ts\" ]; then touch \"$done_marker\"; exit 0; fi; jq -n --arg reason \"このセッションではまだ $mem_file が更新されていません。終了前にMEMORY.mdを確認し、今回学んだこと・決定事項・次回に必要な情報を追記してください。記録すべきことが本当に何もない場合は、その旨を一言書いてから終了してください。\" '{\"decision\":\"block\",\"reason\":$reason}'",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

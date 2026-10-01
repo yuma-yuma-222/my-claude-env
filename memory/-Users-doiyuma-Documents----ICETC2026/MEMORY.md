@@ -1,0 +1,2 @@
+- [ICETC2026 poster review status](icetc2026_poster_review_status.md) — ver6 is latest; which reviewer points applied/deferred and why
+- [Poster review workflow feedback](poster_review_workflow_feedback.md) — how this user likes to work through reviewer comments interactively

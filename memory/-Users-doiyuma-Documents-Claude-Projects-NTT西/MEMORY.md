@@ -1,0 +1,1 @@
+- 就活ES作成プロジェクト。NTT西ディレクトリはNTT西日本セキュリティインターンシップのES作成用、兄弟フォルダ(KDDI/NTTドコモ/ソフトバンク)に他社向け自己PR・スキルシート・資格・CTF実績の既存資料あり。詳細は `/Users/doiyuma/.claude/projects/-Users-doiyuma-Documents-Claude-Projects-NTT-/memory/` にも同内容の記録あり（プロジェクトパスのサニタイズ方式が2通り存在するため両方に記録）。

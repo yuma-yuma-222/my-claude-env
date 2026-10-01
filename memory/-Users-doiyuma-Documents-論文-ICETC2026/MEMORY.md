@@ -1,0 +1,1 @@
+- [Author order policy](author_order_policy.md) — Ichise=2nd author on poster (already correct); never edit IEEE-ICETC_revison.tex author order.

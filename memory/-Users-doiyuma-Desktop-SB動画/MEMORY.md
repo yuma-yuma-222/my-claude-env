@@ -1,0 +1,2 @@
+- [NAS movie reference](nas_movie_reference.md) — NAS mount at /Volumes/NAS, video files organized under /Volumes/NAS/movie/<project-subfolder>
+- [NAS movie root stray files](nas_movie_root_stray_files.md) — 0-byte leftover files in /Volumes/NAS/movie root from a prior failed copy attempt, predates our SB動画 subfolder copy

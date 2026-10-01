@@ -1,0 +1,1 @@
+- [NAS downloads archive layout](nas_downloads_archive.md) — /Volumes/NAS/downloads is organized Year/Month; ~/.Trash ≠ NAS .Trashes

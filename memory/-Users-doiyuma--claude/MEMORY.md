@@ -1,0 +1,1 @@
+- [Memory enforcement hook](memory-enforcement-hook.md) — global Stop hook now forces a MEMORY.md touch every session (hard block, all projects)

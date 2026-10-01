@@ -1,0 +1,2 @@
+- [Disk space ground truth](disk_space_ground_truth.md) — Finder shows wrong free space on this Mac; trust df/diskutil (~94-100GB real, not Finder's 365GB)
+- [MiniMax H3 setup progress](minimax_h3_setup_progress.md) — chosen Argus INT8 route, download sequencing plan, pending sudo blockers (Xcode license, Rosetta), what's done

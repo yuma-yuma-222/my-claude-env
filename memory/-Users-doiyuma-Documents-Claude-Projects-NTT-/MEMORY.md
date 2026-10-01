@@ -1,0 +1,1 @@
+- [就活ESプロジェクトの構造](project_shukatsu_structure.md) — NTT西フォルダは就活ES作成用、他社フォルダに再利用可能な自己PR/スキル資料あり
