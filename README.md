@@ -28,4 +28,3 @@ memory/ はプロジェクト別メモリのみ。フォルダのパスが旧PC�
 - 作業後は `lessons.md`(教訓)と各プロジェクトの `.claude/session-notes/`(note.com用ログ)が自動で書かれる。
 - 詳細な運用ルールは `claude/運用マニュアル.md`。
 - スキルを追加/削除したら AGENTS.md の表も同時に更新する(Section 5)。
-# my-claude-env
